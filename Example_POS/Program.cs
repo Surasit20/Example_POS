@@ -66,7 +66,7 @@ builder.Services.AddAuthentication(options =>
             if (!context.Response.HasStarted)
             {
                 context.Response.StatusCode = 302;
-                context.Response.Headers["Location"] = "/Login/Index"; 
+                context.Response.Headers["Location"] = "/Login/Index";
             }
 
             context.HandleResponse(); // ป้องกัน default 401 response
